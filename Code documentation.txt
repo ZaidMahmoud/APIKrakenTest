@@ -1,0 +1,13 @@
+APIKraken code:
+
+- This python file code allows the user to input:
+* 2 currencies (curr1, curr2). These currencies have to match the currencies names in the asset JSON file.  
+* pair which is a required parameter for the Trades request (baseurl1='https://api.kraken.com/0/public/Trades')
+* asset which is usually contains the codes of the 2 currencies (Sometimes it differes from curr1 and curr2). asset is a prameter for the asset request (baseurl2='https://api.kraken.com/0/public/Assets')// improved to be returened by function get_asset(pair).
+* rescur which is the element of the result in python which contains the data of the trades.Notice (It differes sometime from the curr1 and curr2)
+
+
+- The code has the base URLs in two variables: 
+*Base "Get Recent Trades" URL: baseurl1='https://api.kraken.com/0/public/Trades'
+*Base "Get Asset Info" URL : baseurl2='https://api.kraken.com/0/public/Assets'
+
